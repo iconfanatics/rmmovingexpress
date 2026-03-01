@@ -1,6 +1,23 @@
 version: '3.8'
 
 services:
+  # MySQL Database
+  mysql:
+    image: mysql:8.0
+    container_name: movingexpress_mysql
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD:-rootpassword}
+      - MYSQL_DATABASE=${DB_DATABASE:-rmmovingexpress}
+      - MYSQL_USER=${DB_USER:-rmuser}
+      - MYSQL_PASSWORD=${DB_PASSWORD:-rmpassword}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - movingexpress_network
+
   # Backend API (AdonisJS)
   backend:
     build:
@@ -17,13 +34,15 @@ services:
       - APP_URL=http://localhost:3334
       - APP_URL_FRONTEND=http://localhost:3000
       - DB_CONNECTION=mysql
-      - DB_HOST=${DB_HOST}
+      - DB_HOST=mysql
       - DB_PORT=3306
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_DATABASE=${DB_DATABASE}
+      - DB_USER=${DB_USER:-rmuser}
+      - DB_PASSWORD=${DB_PASSWORD:-rmpassword}
+      - DB_DATABASE=${DB_DATABASE:-rmmovingexpress}
       - SESSION_DRIVER=cookie
       - HASH_DRIVER=bcrypt
+    depends_on:
+      - mysql
     networks:
       - movingexpress_network
 
@@ -66,7 +85,7 @@ services:
     networks:
       - movingexpress_network
 
-  # Nginx Reverse Proxy (Optional - for production)
+  # Nginx Reverse Proxy
   nginx:
     image: nginx:alpine
     container_name: movingexpress_nginx
@@ -85,3 +104,6 @@ services:
 networks:
   movingexpress_network:
     driver: bridge
+
+volumes:
+  mysql_data:
