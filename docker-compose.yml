@@ -1,0 +1,87 @@
+version: '3.8'
+
+services:
+  # Backend API (AdonisJS)
+  backend:
+    build:
+      context: ./rm_backend
+      dockerfile: Dockerfile
+    container_name: movingexpress_backend
+    restart: unless-stopped
+    ports:
+      - "3334:3334"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=3334
+      - NODE_ENV=production
+      - APP_URL=http://localhost:3334
+      - APP_URL_FRONTEND=http://localhost:3000
+      - DB_CONNECTION=mysql
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=3306
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_DATABASE=${DB_DATABASE}
+      - SESSION_DRIVER=cookie
+      - HASH_DRIVER=bcrypt
+    networks:
+      - movingexpress_network
+
+  # Client Frontend (Next.js)
+  client:
+    build:
+      context: ./rm_client
+      dockerfile: Dockerfile
+    container_name: movingexpress_client
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_ENDPOINT=http://backend:3334/api
+      - NEXT_PUBLIC_API_BASE_URL=http://backend:3334/api/v1
+      - NEXT_PUBLIC_API_IMAGES_URL=http://backend:3334
+      - API_BASE_URL=http://backend:3334/api
+    depends_on:
+      - backend
+    networks:
+      - movingexpress_network
+
+  # Admin Panel (Nuxt.js)
+  admin:
+    build:
+      context: ./rm_admin
+      dockerfile: Dockerfile
+    container_name: movingexpress_admin
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      - API_URL=http://backend:3334/api/v1
+      - BACKEND_URL=http://backend:3334
+      - WEBSOCKET_CONNECTION_ENDPOINT=backend:3334
+      - WEBSOCKET_BACKEND_CONNECTION_ENDPOINT=backend:3334
+    depends_on:
+      - backend
+    networks:
+      - movingexpress_network
+
+  # Nginx Reverse Proxy (Optional - for production)
+  nginx:
+    image: nginx:alpine
+    container_name: movingexpress_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - client
+      - admin
+    networks:
+      - movingexpress_network
+
+networks:
+  movingexpress_network:
+    driver: bridge
