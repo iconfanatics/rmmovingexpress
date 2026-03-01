@@ -1,0 +1,28 @@
+@use "../abstracts/variable" as *;
+@use "../abstracts/mixin" as *;
+
+.conditionWrap {
+  margin-top: 44px;
+  margin-bottom: 84px;
+}
+.condition {
+  color: $tx-color;
+  h2 {
+    font-size: $font-size-h4;
+    margin-top: 34px;
+  }
+  h5 {
+    font-size: $font-size-h5;
+    font-weight: 400;
+    margin-top: 8px;
+  }
+  ul {
+    margin-top: 16px;
+    margin-left: 44px;
+
+    li {
+      font-size: $font-size-h5;
+      margin-top: 14px;
+    }
+  }
+}

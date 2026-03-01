@@ -1,0 +1,143 @@
+.de-live-support-wc {
+  @extend .w100p;
+  @extend .tac;
+  color: $theme-color;
+  line-height: 1.9;
+  font-weight: 300;
+}
+
+.de-support-item-wrap {
+  padding: 0;
+  position: relative;
+
+  .de-support-content {
+    position: relative;
+    width: 100%;
+    height: 262px;
+  }
+
+  .de-support-item {
+    @extend .cp;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -88px;
+    position: absolute;
+    z-index: 1;
+    width: 176px;
+    height: 176px;
+    padding-top: 54px;
+    @include border-radius(176px);
+    @extend .dib;
+    @extend .pr;
+
+    &:before {
+      content: "";
+      top: -20px;
+      left: -20px;
+      width: 216px;
+      height: 216px;
+      display: inline-block;
+      border: 1px solid;
+      position: absolute;
+      border-radius: 100%;
+    }
+  }
+
+  .circle-ripple {
+    display: none;
+    top: 50%;
+    left: 50%;
+    margin-top: 30px;
+    margin-left: -10px;
+    z-index: 0;
+    position: absolute;
+    background-color: $theme-color;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    animation: ripple 0.7s linear infinite;
+  }
+
+  &:hover {
+    .circle-ripple {
+      display: block;
+    }
+  }
+
+  .de-support-title {
+    @extend .w100p;
+    height: 60px;
+    margin-top: 84px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 3.6;
+    font-size: 18px;
+  }
+
+  .de-support-live-chat {
+    background-color: #f8b72d;
+
+    &:before {
+      border-color: #f8b72d;
+    }
+  }
+
+  .de-support-callback {
+    background-color: #f68989;
+
+    &:before {
+      border-color: #f8b72d;
+    }
+  }
+
+  .de-support-fb {
+    background-color: #788fe3;
+
+    &:before {
+      border-color: #788fe3;
+    }
+  }
+
+  .de-support-viber {
+    background-color: #b362cc;
+
+    &:before {
+      border-color: #b362cc;
+    }
+  }
+
+  .de-support-telegram {
+    background-color: #4bb8ef;
+
+    &:before {
+      border-color: #4bb8ef;
+    }
+  }
+
+  .de-support-whatsapp {
+    background-color: #78e3b7;
+
+    &:before {
+      border-color: #78e3b7;
+    }
+  }
+}
+
+$color: $theme-color;
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba($color, 0.3),
+      0 0 0 1em rgba($color, 0.3),
+      0 0 0 3em rgba($color, 0.3),
+      0 0 0 5em rgba($color, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 0 1em rgba($color, 0.3),
+      0 0 0 3em rgba($color, 0.3),
+      0 0 0 5em rgba($color, 0.3),
+      0 0 0 8em rgba($color, 0);
+  }
+}

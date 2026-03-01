@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us Email</title>
+</head>
+<body style="margin:0; padding:0; font-family: Arial, sans-serif; background-color:#f7f7f7;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f7f7f7">
+    <tr>
+      <td align="center" style="padding: 30px 10px;">
+        <!-- Email Container -->
+        <table width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="border-radius:8px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+          <!-- Header -->
+          <tr>
+            <td bgcolor="#2c3e50" align="center" style="padding:20px;">
+              <h2 style="color:#ffffff; margin:0;">New Contact Form Submission</h2>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 20px; color:#333;">
+              <p style="font-size:16px; margin:0 0 15px;">
+                Welcome to <strong>RM Moving Express</strong>, you have a new contact request:
+              </p>
+
+              <table width="100%" border="0" cellspacing="0" cellpadding="8" style="font-size:15px; color:#333;">
+                <tr>
+                  <td width="30%"><strong>Client Subject:</strong></td>
+                  <td><b>{{subject}}</b></td>
+                </tr>
+                <tr>
+                  <td><strong>Client Email:</strong></td>
+                  <td><b>{{email}}</b></td>
+                </tr>
+                <tr>
+                  <td><strong>Client Name:</strong></td>
+                  <td><b>{{name}}</b></td>
+                </tr>
+                <tr>
+                  <td><strong>Client Phone:</strong></td>
+                  <td><b>{{phone}}</b></td>
+                </tr>
+                <tr>
+                  <td valign="top"><strong>Client Message:</strong></td>
+                  <td><b>{{message}}</b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td bgcolor="#ecf0f1" align="center" style="padding:15px; font-size:13px; color:#666;">
+              © {{year}} RM Moving Express. All rights reserved.
+            </td>
+          </tr>
+        </table>
+        <!-- End Container -->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

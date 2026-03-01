@@ -1,0 +1,29 @@
+//-------------------- pagination -------------------- //
+.zd-custom-tbl{
+    .v-pagination__item {
+        background: transparent;
+        border-radius: $pagination-border-radius;
+        font-size: 1rem;
+        height: $pagination-item-height;
+        margin: $pagination-item-margin;
+        min-width: $pagination-item-min-width;
+        padding: $pagination-item-padding;
+        text-decoration: none;
+        transition: 0.3s cubic-bezier(0, 0, 0.2, 1);
+        width: $pagination-navigation-width;
+        box-shadow: $pagination-box-shadow;
+
+        &:focus {
+          outline: 0;  
+        }
+    }
+    .v-pagination__navigation {
+        box-shadow: $pagination-box-shadow; 
+
+        &:focus {
+            outline: 0;  
+        }
+    }
+}
+
+

@@ -1,0 +1,262 @@
+@use "../abstracts/variable" as *;
+@use "../abstracts/mixin" as *;
+
+.testimonial {
+  margin-bottom: 100px;
+}
+.testimonialWrap {
+  background-color: #f6f7fa;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 100px;
+}
+.testimonialMap {
+  width: 1180px;
+  height: 770px;
+  display: inline-block;
+  background-image: url("/map.png");
+  background-repeat: no-repeat;
+
+  @include size("xl") {
+    width: 100%;
+    height: 100%;
+  }
+}
+.testimonialStar {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  img {
+    margin-right: 4px;
+  }
+
+  .verifiedReview {
+    display: inline-block;
+    background: url("../../../public/ti-verified.svg");
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    margin: 0 !important;
+    margin-left: 7px !important;
+    position: relative;
+    z-index: 2;
+    .reviewNot {
+      width: 114px;
+      height: 92px;
+      padding: 4px;
+      padding-bottom: 6px;
+      font-family: "Trustindex Open Sans";
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.4em;
+      color: #fff !important;
+      background-color: #555555 !important;
+      border-radius: 4px;
+      position: absolute;
+      left: -18px;
+      top: 0px;
+      z-index: 1;
+      opacity: 0;
+      margin-left: 35px;
+      visibility: hidden;
+      transition:
+        opacity 0.3s ease-in-out,
+        margin 0.3s ease-in-out;
+    }
+    &:hover {
+      .reviewNot {
+        // display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+.messageWrap {
+  height: 160px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 6px; /* scrollbar width */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f4f4f4; /* track color */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888; /* scrollbar thumb color */
+    border-radius: 5px; /* rounded edges */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555; /* hover color */
+  }
+}
+.testimonialSliderWrap {
+  position: relative;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 24px;
+  margin: 9px;
+
+  .testimonialHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .testimonialHeadLeft {
+    display: flex;
+  }
+
+  h5 {
+    color: $tx-color-content;
+    margin: auto;
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    @include size("md") {
+      width: 100%;
+      padding: 6px;
+    }
+  }
+  h4 {
+    font-size: $font-size-h5;
+    color: $tx-color-content;
+    margin-top: 20px;
+  }
+  .testimonialName {
+    text-align: left;
+    margin-left: 6px;
+    h3 {
+      font-weight: bold;
+      font-size: 18px;
+      overflow: hidden;
+      padding-right: 25px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #000000;
+      margin-bottom: 2px;
+    }
+    h6 {
+      color: #000000;
+      opacity: 0.5;
+      font-size: 14px;
+    }
+  }
+
+  .testimonialImg {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+
+    img {
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  }
+}
+.testimonialDotList {
+  li {
+    button {
+      border-color: $primary;
+      background-color: $primary;
+    }
+  }
+}
+.testimonialSliderContent {
+  position: relative;
+}
+.testimonialProfile {
+  width: 100%;
+  background-color: green;
+  .testimonialProfileItem {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    background: gray;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgba(9, 2, 111, 0.3);
+
+    @include size("xl") {
+      display: none;
+    }
+
+    &:nth-child(1) {
+      left: -100px;
+      width: 80px;
+      height: 80px;
+    }
+    &:nth-child(2n) {
+      right: -200px;
+      width: 74px;
+      height: 74px;
+    }
+    &:nth-child(3n) {
+      left: -200px;
+      width: 74px;
+      height: 74px;
+      top: 150px;
+    }
+    &:nth-child(4n) {
+      right: -120px;
+      width: 50px;
+      height: 50px;
+      top: 150px;
+    }
+    &:nth-child(5n) {
+      left: -150px;
+      width: 74px;
+      height: 74px;
+      bottom: -40px;
+    }
+    &:nth-child(6n) {
+      right: -244px;
+      width: 80px;
+      height: 80px;
+      top: unset;
+      left: unset;
+      bottom: 58px;
+    }
+    &:nth-child(7n) {
+      right: -144px;
+      width: 50px;
+      height: 50px;
+      top: unset;
+      left: unset;
+      bottom: 0px;
+    }
+  }
+}
+.reviewGoogle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+
+  h3 {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 6px;
+    color: #000000;
+  }
+  h5 {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 14px;
+  }
+  .googleStar {
+    display: flex;
+  }
+  .googleLogo {
+    margin-top: 10px;
+  }
+}
+.serviceSlider {
+  height: 360px;
+}

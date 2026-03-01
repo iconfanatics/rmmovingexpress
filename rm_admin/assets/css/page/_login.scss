@@ -1,0 +1,404 @@
+.de-login {
+    width: 400px;
+    margin-bottom: 45px;
+    background: #fff;
+    padding: 34px;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -235px;
+    z-index: 50000;
+    .v-label {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 29px;
+        color: #313131;
+        font-weight: 300;
+        margin-top: 22px;
+        margin-bottom: 7px;
+    }
+    h4 {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    p {
+        margin-top: 20px;
+        span {
+            font-size: 13px;
+        }
+    }
+    .de-forgot {
+        width: 100%;
+        .de-checkbox {
+            width: 50%;
+            font-size: 14px;
+            display: inline-block;
+            .v-label {
+                font-size: 14px;
+            }
+        }
+        .de-forgot-link {
+            width: 48%;
+            font-size: 13px;
+        }
+    }
+}
+
+.de-signup {
+    width: 700px;
+    padding: 20px;
+    margin-top: -184px;
+    margin-left: -350px;
+    .de-social-ico-wrap {
+        margin-top: -12px;
+        margin-left: 16px;
+        span {
+            color: $theme-color;
+        }
+    }
+    p {
+        text-align: left;
+        margin-left: 28px;
+        margin-top: 36px;
+    }
+    .de-sign-in-btn {
+        margin-left: 28px;
+    }
+    .v-input {
+        width: 46%;
+        display: inline-block;
+        margin: 0px 1%;
+    }
+}
+
+//.de-login-title {
+//  background-color: #1b77ff;
+//  padding: 12px 50px;
+//  color: #FFFFFF;
+//  margin-top: 80px;
+//  font-size: 24px;
+//  font-weight: 300;
+//  border-radius: 0 !important;
+//  @extend .dib;
+//}
+.de-login-btn {
+    padding: 13px 25px !important;
+    height: 40px !important;
+    width: 100%;
+}
+
+.de-sign-up-title {
+    padding-top: 44px;
+    h1 {
+        font-size: 28px;
+        font-weight: 300;
+        color: $theme-color;
+    }
+    h2 {
+        font-size: 14px;
+        font-weight: 300;
+        color: #8f8f8f;
+        @extend .tac;
+    }
+}
+
+.de-sign-up-form {
+    margin: auto;
+    padding: 10px 18px 0;
+}
+
+.de-social-ico-wrap {
+    display: inline-block;
+    vertical-align: top;
+    span {
+        margin-left: 18px;
+    }
+    .de-social-ico-item {
+        width: 46px;
+        height: 46px;
+        margin-left: 26px;
+        padding-top: 12px;
+        @include border-radius(46px);
+        @include box-shadow(0px 4px 6px rgba(6, 45, 97, 0.11));
+        @extend .dib;
+        @extend .tns;
+        @extend .cp;
+        &:hover {
+            @include translateY(-10px);
+            @extend .tns;
+            @include box-shadow(0px 4px 6px rgba(6, 45, 97, 0.2));
+        }
+    }
+}
+
+.de-sign-up-wrap {
+    padding-bottom: 44px;
+}
+
+.de-sign-up-btn {
+    text-decoration: none;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.login_wrap {
+    position: relative;
+    height: 100vh;
+    // overflow: hidden;
+}
+
+.de-ani-box {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px darken(#0040C1, 8%);
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+    &:nth-child(2n) {
+        border-color: lighten(#0040C1, 10%);
+    }
+    &:nth-child(2) {
+        animation-delay: 2s;
+        left: 25vw;
+        top: 40vh;
+    }
+    &:nth-child(3) {
+        animation-delay: 4s;
+        left: 75vw;
+        top: 50vh;
+    }
+    &:nth-child(4) {
+        animation-delay: 6s;
+        left: 90vw;
+        top: 10vh;
+    }
+    &:nth-child(5) {
+        animation-delay: 8s;
+        left: 10vw;
+        top: 85vh;
+    }
+    &:nth-child(6) {
+        animation-delay: 10s;
+        left: 50vw;
+        top: 10vh;
+    }
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.de-login-title {
+    @extend .dib;
+    margin-bottom: 24px;
+    &.p-title {
+      margin-bottom: 0;
+    }
+    h2 {
+        color: $theme-color;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    p {
+        color: #828593;
+        font-size: 14px;
+    }
+}
+
+.de-login-right-side {
+    width: 100%;
+    text-align: center;
+    border-left: 1px solid #dad9d9;
+    &.reg-right-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .de-login-right-content {
+      // display: flex;
+      // flex-direction: column;
+      img {
+          width: 308px;
+      }
+      h2 {
+          font-size: 24px;
+          color: #56585f;
+          padding: 0 10px;
+      }
+      h4 {
+          font-size: 15px;
+          color: #6e7077;
+          margin-top: 16px;
+          padding: 0 10px;
+      }
+    }
+}
+
+.de-login-logo {
+    margin-bottom: 20px;
+}
+
+.de-login-btn {
+    padding: 13px 25px !important;
+    height: 40px !important;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.de-reg-btn {
+    width: 172px !important;
+    margin-left: 23px;
+}
+
+.v-content {
+    &.de-main-pos {
+        // padding: 64px 0px 0px 175px !important;
+    }
+}
+
+.de-sign-up-title {
+    padding-top: 44px;
+    h1 {
+        font-size: 28px;
+        font-weight: 300;
+        color: $theme-color;
+    }
+    h2 {
+        font-size: 14px;
+        font-weight: 300;
+        color: #8f8f8f;
+        @extend .tac;
+    }
+}
+
+.de-form-bottom {
+    h4 {
+        margin-top: 24px;
+        a {
+            color: #828593;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    p {
+        color: #828593;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 18px;
+        a {
+            color: $theme-color;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.de-sign-up-form {
+    margin: auto;
+    padding: 10px 18px 0;
+}
+
+.de-forgot-box {
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
+}
+
+.de-loging-header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    @include box-shadow(5px 5px 15px 5px rgba(165, 173, 195, 0.16));
+    @extend .dib;
+    .de-login-logo {
+        height: 60px;
+        margin-left: 34px;
+        img {
+            height: 100%;
+        }
+    }
+    .de-header-right {
+      margin-top: 0px;
+      // display: flex;
+      // justify-content: flex-end;
+      // align-items: center;
+      // background: black;
+      .de-country-btn {
+        float: right;
+        margin-right: 16px;
+        margin-top: 8px;
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgb(0 0 0 / 3%), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+      }
+        .de-country-drop {
+            margin-top: 13px !important;
+            float: right;
+            margin-right: 58px !important;
+        }
+    }
+}
+.de-form-bottom {
+    h4 {
+        margin-top: 24px;
+        a {
+            color: #828593;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    p {
+        color: #828593;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 18px;
+        a {
+            color: $theme-color;
+            font-size: 14px;
+            font-weight: 400;
+            display: inline-block;
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+.ml24 {
+    margin-left: 24px;
+}
+
+.de-search,
+.de-header-right {
+    .mdi:before,
+    .mdi-set {
+        font-size: 36px !important;
+        color: #c1c1c1;
+    }
+}
+
+.de-country-drop {
+    display: inline-block !important;
+    margin-top: 23px !important;
+    width: 106px !important;
+}
+
+.de-lan-dropdown {
+    width: 120px;
+    float: right;
+}

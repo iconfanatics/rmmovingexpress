@@ -1,0 +1,272 @@
+@use "../abstracts/variable" as *;
+@use "../abstracts/mixin" as *;
+.quote {
+  margin-top: 24px;
+  margin-bottom: 84px;
+  form {
+    background-color: white;
+  }
+}
+.stepperBtnWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  button {
+    background: #eee;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+  }
+}
+
+.quoteNextPrevWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+  button {
+    margin: 0 6px;
+  }
+}
+.inputItem {
+  margin-bottom: 24px;
+  margin-top: 24px;
+
+  @include size("md") {
+    margin-bottom: 0;
+  }
+  label {
+    width: 100%;
+    margin-bottom: 16px;
+    display: inline-block;
+    font-size: $font-size-h5;
+    color: $tx-color;
+    p {
+      font-size: $font-size-p;
+      color: $tx-color-content;
+      span {
+        color: $error;
+      }
+    }
+  }
+  input,
+  textarea {
+    border: 1px solid hsl(0, 0%, 80%);
+    padding: 12px !important;
+    width: 100%;
+    border-radius: 4px;
+    @extend .transitionAll;
+    color: $tx-color;
+    background: white;
+    &::placeholder {
+      color: hsl(0, 0%, 50%);
+    }
+    &:focus {
+      // border-color: red;
+      outline: 0;
+      box-shadow: 0px 0px 3px 3px rgba(249, 183, 41, 0.3);
+      @extend .transitionAll;
+    }
+  }
+  textarea {
+    width: 100%;
+    resize: vertical;
+  }
+}
+.selectItem {
+  margin-bottom: 24px;
+  margin-top: 24px;
+  color: $tx-color;
+
+  .selectDropdown {
+    color: $tx-color;
+  }
+
+  label {
+    width: 100%;
+    margin-bottom: 16px;
+    display: inline-block;
+    font-size: 18px;
+  }
+}
+.inputTxError {
+  color: $error;
+  font-size: 14px;
+}
+
+.rangeQuote {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  p {
+    font-size: $font-size-h3;
+    color: $primary;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .rangeSpace {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  .cubicMeterLink {
+    color: $tx-color;
+    margin-top: 24px;
+    a {
+      font-weight: 600;
+      color: $primary;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.radioWrap {
+  position: relative;
+  height: 260px;
+  .radioItem {
+    width: 100px;
+  }
+  .radioIcon {
+    height: 120px;
+    width: 188px;
+    position: absolute;
+    bottom: 0;
+    bottom: 0;
+    // background-color: red;
+    @extend .center;
+    svg {
+      width: 120px;
+      &:hover {
+        fill: $primary;
+      }
+    }
+  }
+  .radioTx {
+    font-size: 16px;
+    color: $tx-color;
+  }
+}
+/// Radio Button
+.customRadioWrap {
+  display: flex;
+}
+.customRadio input {
+  display: none;
+}
+
+.radioBtn {
+  margin: 10px;
+  width: 220px;
+  height: 174px;
+  border: 3px solid transparent;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 20px #c3c3c367;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radioBtn > i {
+  color: #ffffff;
+  background-color: #ffdae9;
+  font-size: 20px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) scale(2);
+  border-radius: 50px;
+  padding: 3px;
+  transition: 0.5s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.radioBtn .hobbiesIcon {
+  // width: 150px;
+  // height: 150px;
+  // position: absolute;
+  // top: 40%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+
+  width: 74px;
+  height: 74px;
+  margin-top: 24px;
+  // position: absolute;
+  // top: 24%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+.radioBtn h3 {
+  color: $tx-color;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.customRadio input:checked + .radioBtn {
+  border: 1px solid $primary;
+}
+
+.customRadio input:checked + .radioBtn > i {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+.checkIcon {
+  width: 30px;
+  height: 30px;
+  svg {
+    width: 30px;
+  }
+}
+.involvedChekbox {
+  display: flex;
+  gap: "0.5rem";
+  width: 150px;
+}
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  background-color: $primary;
+  border: 0;
+  width: 300px;
+  font-size: $font-size-h4;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @include size("md") {
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+.checkboxItem {
+  @include size("md") {
+    margin-top: 24px;
+  }
+}
+
+.successMessage {
+  margin-top: 24px;
+  color: #009f06;
+  font-size: 18px;
+}
+.errorMessage {
+  margin-top: 24px;
+  color: #9f0000;
+  font-size: 18px;
+}

@@ -1,0 +1,51 @@
+@use "../abstracts/_variable.scss" as *;
+
+body {
+  background: white;
+  color: $tx-color;
+  font-family: $font-famalyl;
+  margin: 0;
+  padding: 0;
+  // transition: background 0.1s ease;
+  overflow: hidden; /* Disable default scroll */
+  scroll-behavior: auto;
+}
+
+h1 {
+  color: var(--color-text-secondary);
+}
+
+body,
+body[data-theme="light"] {
+  .text {
+    color: $dark-600;
+  }
+  .background {
+    background-color: $light-600;
+  }
+}
+
+body[data-theme="dark"] {
+  .text {
+    color: $ppp;
+  }
+  .background {
+    background-color: $dark-600;
+  }
+}
+
+.container {
+  width: 1540px;
+  margin: auto;
+}
+@media only screen and (max-width: 1736px) {
+  .container {
+    width: 1370px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 1360px) {
+  .container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,118 @@
+body {
+  overflow-x: hidden;
+}
+
+.de-balance-box {
+  margin-top: 16px;
+  display: flex;
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .de-balance-icon {
+    @extend .dib;
+  }
+  .de-balance-tx {
+    @extend .dib;
+    vertical-align: top;
+    margin-top: 18px;
+    margin-left: 14px;
+    h3 {
+     text-transform: uppercase;
+    }
+    h3, h4, span {
+      font-size: 14px;
+      color: $font-gray-color;
+      font-weight: 400;
+    }
+    h4 {
+      margin-top: 6px;
+    }
+  }
+}
+.de-no-option-item {
+  @extend .tac;
+  padding: 36px;
+
+  h3 {
+    font-size: 16px;
+    color: #2c2c34;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 16px;
+    color: $pink-light-color;
+    font-weight: 300;
+  }
+}
+.de-equity-chart-wrap {
+  height: 674px;
+}
+.download-item {
+  a {
+    text-decoration: none;
+  }
+}
+.de-graph-wrap {
+  box-shadow: 0px 3px 3px 0px rgba(38, 37, 46, 0.11) !important;
+  background: #FFFFFF;
+  padding: 16px;
+}
+.de-order-item {
+  @include box-shadow(2px 4px 18px rgba(111,106,254,.18));
+  @include border-radius(10px);
+  padding: 26px 10px;
+  display: flex;
+  margin-top: 40px;
+
+  &:first-child {
+    margin-top: 0px;
+  }
+  .icon-wrap {
+    border-radius: 12px;
+    background-color: #196df2;
+    margin-right: 12px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .v-icon {
+      color: white !important;
+      font-size: 24px !important;
+    }
+    &.ico-blue {
+      background: #3c97fe;
+      background: linear-gradient(180deg $live-order-color-one 1% $live-order-color-two);
+      @include box-shadow(2px 4px 18px $live-order-color-shadow);
+    }
+    &.ico-red {
+      background: $close-order-color-one;
+      background: linear-gradient(180deg, $close-order-color-one 0, $close-order-color-two);
+      @include box-shadow(2px 4px 18px $close-order-color-shadow);
+    }
+    &.ico-aqua {
+      background: $deposits-one;
+      background: linear-gradient(180deg, $deposits-one 0, $deposits-two 99%);
+      @include box-shadow(2px 4px 18px $deposits-shadow);
+    }
+    &.ico-green {
+      background: $withdraws-one;
+      background: linear-gradient(180deg, $withdraws-one 0, $withdraws-two);
+      @include box-shadow(2px 4px 18px $withdraws-shadow);
+    }
+  }
+  .de-order-tx {
+    h3 {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    h4 {
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 2px;
+    }
+  }
+
+}

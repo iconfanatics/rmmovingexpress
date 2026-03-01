@@ -1,0 +1,103 @@
+@use "../abstracts/variable" as *;
+
+.main {
+  min-height: 100vh;
+}
+.home {
+  background-color: white;
+}
+
+// .shapeWrap {
+//   margin-top: 200px;
+//   width: 380px;
+// }
+// .shapeOne {
+//   background-color: #477de9;
+//   height: 211px;
+//   width: 114px;
+//   border-radius: 57px;
+//   display: inline-block;
+//   margin-left: 54px;
+//   position: relative;
+//   overflow: hidden;
+//   img {
+//     padding: 20px;
+//     opacity: 0.5;
+//   }
+// }
+// .shapeTwo {
+//   background-color: #2196f3;
+//   height: 140px;
+//   width: 166px;
+//   display: inline-block;
+//   margin-left: 16px;
+//   border-top-left-radius: 72px;
+//   border-top-right-radius: 72px;
+//   border-bottom-right-radius: 72px;
+//   position: relative;
+//   overflow: hidden;
+//   img {
+//     padding: 16px;
+//     opacity: 0.5;
+//   }
+// }
+// .shapeThree {
+//   background-color: #12b57a;
+//   height: 140px;
+//   width: 166px;
+//   display: inline-block;
+//   border-top-left-radius: 72px;
+//   border-bottom-left-radius: 72px;
+//   border-bottom-right-radius: 72px;
+//   margin-top: 20px;
+//   position: relative;
+//   overflow: hidden;
+//   img {
+//     opacity: 0.5;
+//   }
+// }
+// .shapeFour {
+//   background-color: #714dd9;
+//   height: 166px;
+//   width: 166px;
+//   display: inline-block;
+//   border-radius: 72px;
+//   margin-left: 16px;
+//   margin-top: 20px;
+//   vertical-align: top;
+//   position: relative;
+//   overflow: hidden;
+//   img {
+//     padding: 16px;
+//     opacity: 0.5;
+//     transform: translateY(14px);
+//   }
+// }
+// .shapeOne,
+// .shapeTwo,
+// .shapeThree,
+// .shapeFour {
+//   transition: all 0.3s ease;
+
+//   .goPage {
+//     background-color: rgba(255, 255, 255, 1);
+//     cursor: pointer;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     padding: 6px;
+//     border-radius: 10px;
+//     opacity: 0.6;
+//     transition: all 0.3s ease;
+//   }
+
+//   &:hover {
+//     transform: scale(1.1);
+//     transition: all 0.3s ease;
+//     .goPage {
+//       opacity: 1;
+//       transition: all 0.3s ease;
+//     }
+//   }
+// }

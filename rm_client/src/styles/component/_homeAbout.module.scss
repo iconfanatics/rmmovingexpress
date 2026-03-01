@@ -1,0 +1,66 @@
+@use "../abstracts/variable" as *;
+@use "../abstracts/mixin" as *;
+.homeAbout {
+  color: $tx-color;
+  margin-top: 80px;
+  h4 {
+    font-size: $font-size-h3;
+    font-weight: 400;
+    @include size("md") {
+      font-size: $font-size-h4;
+    }
+  }
+  h1 {
+    font-size: $font-size-h1;
+    margin: 16px 0;
+    font-weight: 400;
+
+    @include size("md") {
+      font-size: $font-size-h3;
+    }
+  }
+  p {
+    font-size: $font-size-h5;
+    line-height: 1.6;
+    padding-left: 4%;
+    @include size("md") {
+      padding-left: 0;
+    }
+  }
+}
+.homeAboutImgWrap {
+  position: relative;
+  margin-top: 44px;
+  height: 234px;
+
+  .homeAboutImgContent {
+    width: 499px;
+    position: absolute;
+    right: 0%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .homeAboutImg {
+    // transform: translateX(100%);
+    width: 499px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+.pillow {
+  position: relative;
+  background-color: lightblue;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  right: 0; // Default position
+}
+.aboutSectionOne {
+  height: 400px;
+  width: 100%;
+  background-color: r;
+}

@@ -1,0 +1,30 @@
+$primary: #f9b729;
+$secondary-color: #333c44;
+$gray-light: #f5f5f5;
+// $tx-color: #1e1e1e;
+$tx-color: #333c44;
+$tx-color-dark: #1f1f1f;
+$tx-color-light: #484848;
+$tx-color-content: #5a6079;
+$success: #2ecc71;
+$error: #e74c3b;
+
+$font-size-h1: 54px;
+$font-size-h2: 44px;
+$font-size-h3: 34px;
+$font-size-h4: 24px;
+$font-size-h5: 18px;
+$font-size-h6: 12px;
+$font-size-p: 16px;
+
+$border-color: #d0d5dd;
+$font-famalyl: "Yantramanav", sans-serif;
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transitionAll {
+  transition: all 0.3s ease;
+}

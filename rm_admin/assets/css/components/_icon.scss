@@ -1,0 +1,339 @@
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("font/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2") format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.zd-ico {
+  width: 26px;
+  height: 24px;
+  background-image: url("../../static/icon.png");
+  @extend .dib;
+}
+
+.zd-home {
+  background-position: 0px 0px;
+}
+
+.zd-profile {
+  background-position: 0px -30px;
+}
+
+.zd-trading {
+  background-position: 0px -59px;
+}
+
+.zd-finance {
+  background-position: 0px -88px;
+}
+
+.zd-ticket {
+  background-position: 0px -121px;
+}
+
+.zd-promotions {
+  background-position: 0px -149px;
+}
+
+.zd-contest {
+  background-position: 0px -178px;
+}
+
+.zd-download {
+  background-position: 0px -206px;
+}
+
+.zd-partner {
+  background-position: 0px -234px;
+}
+
+.zd-support {
+  background-position: 0px -267px;
+}
+
+.zd-faq {
+  background-position: 0px -294px;
+}
+
+.zd-sidebar-menu-ico {
+  background-position: 0px -320px;
+  height: 16px;
+}
+
+.de-drop-icon {
+  background-position: 0px -341px;
+  width: 31px;
+}
+
+.zd-fb {
+  background-position: 0px -377px;
+}
+
+.zd-linkedin {
+  background-position: 0px -416px;
+  width: 27px;
+}
+
+.zd-g-plus {
+  background-position: 0px -451px;
+  height: 26px;
+}
+
+.de-add {
+  background-position: -6px -482px;
+  height: 17px;
+  width: 17px;
+}
+
+.de-w-edit {
+  background-position: 0px -504px;
+  height: 17px;
+}
+
+.de-edit {
+  background-position: 0px -527px;
+  height: 17px;
+}
+
+.de-delete {
+  background-position: 0px -547px;
+  height: 17px;
+}
+
+.de-arrow-down {
+  background-position: -9px -569px;
+  height: 7px;
+  width: 12px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+
+
+.de-img {
+  background-image: url("../../static/sprite.png");
+  @extend .dib;
+}
+.de-order-box {
+  display: flex;
+  align-items: center;
+  padding: 24px 10px;
+  height: 100px;
+  margin-top: 20px;
+  &:first-child {
+    margin-top: 26px;
+  }
+
+  .de-order-tx {
+    h3 {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    h4 {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+}
+
+.de-order-icon {
+  width: 19px;
+  height: 18px;
+
+  &.order-img {
+    background-image: url("../../static/order-ico.png");
+  }
+  &.deposit-img {
+    background-image: url("../../static/deposit.png");
+  }
+  &.withdraw-img {
+    background-image: url("../../static/withdraw-ico.png");
+  }
+  &.close-img {
+    background-image: url("../../static/close-order.png");
+  }
+}
+
+.de-balance {
+  width: 57px;
+  height: 78px;
+  background-position: -74px 0px;
+}
+
+.de-deposit {
+  width: 67px;
+  height: 78px;
+  background-position: -137px 0px;
+}
+
+.de-withdraw {
+  width: 66px;
+  height: 78px;
+  background-position: -210px 0px;
+}
+
+.de-paypal {
+  width: 74px;
+  height: 21px;
+  background-position: -281px 0px;
+}
+
+.de-mastercard {
+  width: 56px;
+  height: 35px;
+  background-position: -107px -85px;
+}
+
+.de-visa {
+  width: 47px;
+  height: 30px;
+  background-position: -54px -85px;
+}
+
+.de-no-option {
+  width: 49px;
+  height: 49px;
+  background-position: 0px -85px;
+}
+
+.de-mac {
+  width: 32px;
+  height: 35px;
+  vertical-align: middle;
+  background-position: -171px -85px;
+}
+
+.de-iPhone {
+  width: 32px;
+  height: 35px;
+  vertical-align: middle;
+  background-position: -171px -85px;
+}
+
+.de-android {
+  width: 32px;
+  height: 35px;
+  vertical-align: middle;
+  background-position: -202px -85px;
+}
+
+.de-windows {
+  width: 32px;
+  height: 35px;
+  vertical-align: middle;
+  background-position: -235px -85px;
+}
+
+.de-download-ico {
+  width: 12px;
+  height: 12px;
+  background-position: -9px -579px;
+  margin-left: 3px;
+}
+
+.de-support-live-chat-icon {
+  width: 78px;
+  height: 67px;
+  background-position: -287px -26px;
+}
+
+.de-support-callback-icon {
+  width: 54px;
+  height: 67px;
+  background-position: 0px -133px;
+}
+
+.de-support-fb-icon {
+  width: 64px;
+  height: 67px;
+  background-position: -65px -138px;
+}
+
+.de-support-viber-icon {
+  width: 64px;
+  height: 67px;
+  background-position: -136px -139px;
+}
+
+.de-support-telegram-icon {
+  width: 64px;
+  height: 67px;
+  background-position: 0 -198px;
+}
+
+.de-support-whatsapp-icon {
+  width: 65px;
+  height: 67px;
+  background-position: -286px -138px;
+}
+
+.de-full-screen-ico {
+  background-position: 0px -592px;
+}
+
+.de-notification-ico {
+  background-position: 0px -614px;
+}
+
+.de-message-ico {
+  background-position: 0px -638px;
+}
+
+.de-right-menu-ico {
+  background-position: 0px -660px;
+  height: 17px;
+}
+
+.cahs-ico {
+  width: 54px;
+  height: 49px;
+  background-image: url("../../static/ionc_cahs.png");
+  @extend .dib;
+}
+
+.account-wallet-ico {
+  width: 52px;
+  height: 45px;
+  background-image: url("../../static/ionc_account-wallet.png");
+  @extend .dib;
+}
+
+.insurance-ico {
+  width: 56px;
+  height: 47px;
+  background-image: url("../../static/ionc_insurance.png");
+  @extend .dib;
+}
+
+.profit-wallet-ico {
+  width: 55px;
+  height: 52px;
+  background-image: url("../../static/ionc_profit-wallet.png");
+  @extend .dib;
+}
+
+.compensation-ico {
+  width: 55px;
+  height: 42px;
+  background-image: url("../../static/ionc_compensation.png");
+  @extend .dib;
+}

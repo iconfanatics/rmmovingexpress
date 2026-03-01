@@ -1,0 +1,129 @@
+.de-trading-account-box {
+  @extend .pr;
+  @include border-radius(5px);
+  box-shadow: 0px 3px 3px 0px rgba(38, 37, 46, 0.11) !important;
+  background: #FFFFFF;
+  padding: 27px 27px 1px;
+
+  h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+  }
+  p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #232323;
+    line-height: 1.7;
+    margin-top: 10px;
+  }
+}
+.de-pagenation-button {
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+}
+.de-tbl-extra-header {
+  width: 50%;
+}
+.de-more-btn-small {
+  &.de-copy-btn {
+    .v-icon {
+      color: $gray-extra-light-color !important;
+    }
+  }
+}
+
+.de-trading-tab {
+  background-color: $theme-color;
+  height: 64px;
+  .v-slide-group__next, .v-slide-group__prev {
+    .v-icon {
+      color: $gray-extra-light-color !important;
+    }
+  }
+  .v-tabs-slider {
+    background: $black-extra-color !important;
+  }
+  .v-tab .v-tab--active {
+    color: #FFFFFF !important;
+    caret-color: #FFFFFF !important;
+  }
+  .v-tab--active {
+    color: #FFFFFF !important;
+  }
+  .v-application .primary--text {
+    color: #40b554 !important;
+    caret-color: #ff1bc8 !important;
+  }
+  .v-tab.v-tab {
+    font-weight: 300 !important;
+    font-size: 0.775rem;
+    color: $theme-light-color !important;
+    &.v-tab--active{
+      color: $white-color !important;
+    }
+  }
+
+
+
+  //&: v-tab--active{
+  //  color: #FFFFFF !important;
+  //}
+}
+
+.v-application {
+  .de-trading-tab {
+    .primary--text {
+      color: #063291 !important;
+      caret-color: #063291 !important;
+      height: 64px;
+    }
+  }
+}
+.de-circle-tbl-btn {
+  top: 137px !important;
+  right: 56px !important;
+}
+
+.v-pagination {
+  &.de-pagenation-pos {
+    width: calc(100% - 585px);
+    justify-content: flex-end;
+    transform: translate(0px, -41px);
+  }
+}
+.de-pagenation-btn {
+  position: absolute;
+  left: 0;
+  bottom: 36px;
+}
+//.v-application .primary--text {
+//  color: #434d5a !important;
+//  caret-color: #ff1b89 !important;
+//}
+.de-partners-options-btn {
+  a {
+    text-decoration: none;
+    margin: 0 2px;
+  }
+}
+.de-copy-btn {
+  .v-icon {
+    color: $blue-light-color !important;
+  }
+}
+
+.de-withdraw-funds {
+  height: 407px;
+  text-align: center;
+  .zd-tbl-title {
+    text-align: left;
+  }
+}
+.de-banner-title {
+  padding: 0;
+  margin: 10px;
+  color: #1b77ff;
+  font-weight: 400;
+}

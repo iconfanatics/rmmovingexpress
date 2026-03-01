@@ -1,0 +1,37 @@
+@use "../../abstracts/variable" as *;
+@use "../../abstracts/mixin" as *;
+
+.cost {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  color: $tx-color;
+  @include size("md") {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  h2 {
+    font-size: $font-size-h1;
+    font-weight: 400;
+    width: 80%;
+    @include size("md") {
+      width: 100%;
+      font-size: $font-size-h3;
+    }
+  }
+  p {
+    font-size: $font-size-p;
+  }
+}
+.costQuoteBtn {
+  background-color: $primary;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
+  margin-top: 24px;
+
+  &:hover {
+    background-color: $secondary-color;
+    transition: all 0.3s ease;
+  }
+}

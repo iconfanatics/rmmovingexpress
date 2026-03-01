@@ -1,0 +1,31 @@
+@use "../abstracts/variable" as *;
+@use "../abstracts/mixin" as *;
+.title {
+  text-align: center;
+  color: $tx-color;
+  margin-bottom: 24px;
+  margin-top: 80px;
+  color: $tx-color;
+  @include size("md") {
+    margin-top: 34px;
+  }
+  h2 {
+    font-size: $font-size-h1;
+    margin-bottom: 16px;
+    font-weight: 400;
+    color: $tx-color;
+    @include size("md") {
+      font-size: $font-size-h3;
+    }
+  }
+  p {
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+    color: $tx-color;
+    @include size("md") {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}

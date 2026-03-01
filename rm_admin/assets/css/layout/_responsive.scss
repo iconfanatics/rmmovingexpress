@@ -1,0 +1,375 @@
+.de-m-layout {
+  display: flex;
+}
+
+.de-desktop-hide {
+  display: none !important;
+}
+
+.de-desktop-show {
+  display: inline-block !important;
+}
+
+@media screen and (max-width: 1800px) {
+  .de-balance-box {
+    padding: 36px;
+  }
+
+  .de-balance-icon {
+    @include scale(1);
+  }
+}
+
+@media screen and (max-width: 1790px) {
+  .de-balance-box {
+    padding: 10px;
+  }
+
+  .de-balance-icon {
+    @include scale(0.6);
+  }
+  .de-profile-tab-tx ul li .de-tab-tx-left, .de-summery-tx ul li .de-tab-tx-left {
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .de-partners-options-btn a {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .de-order-box {
+    padding: 24px 2px;
+}
+.de-order-box .de-order-icon {
+  margin-right: 5px;
+}
+.de-order-box .de-order-tx h3 {
+  font-size: 13px;
+}
+.de-order-box .de-order-tx h4 {
+  font-size: 13px;
+}
+.de-order-box .de-order-icon {
+  width: 19px;
+  height: 28px;
+  margin-right: 4px;
+  background-size: contain;
+}
+  .de-profile-tab-tx ul li .de-tab-tx-left,
+  .de-summery-tx ul li .de-tab-tx-left {
+    width: 32%;
+  }
+
+  .de-profile-tab-tx ul li .de-tab-tx-right,
+  .de-summery-tx ul li .de-tab-tx-right {
+    width: 49%;
+  }
+
+  .de-balance-box .de-balance-tx h3 {
+    font-size: 13px;
+  }
+
+  .de-balance-box .de-balance-tx {
+    margin-left: 0px;
+  }
+
+  .de-equity-chart-wrap {
+    height: 466px;
+  }
+
+  //.de-sidebar {
+  //  background: red !important;
+  //}
+}
+
+//end screen
+//@media screen and (max-width: 1395px) {
+//  .de-sidebar {
+//    background: red !important;
+//  }
+//}
+//end screen
+@media screen and (max-width: 1390px) {
+  .de-sidebar {
+    background: white !important;
+  }
+}
+
+//end screen
+@media screen and (max-width: 1280px) {
+  .de-balance-box {
+    padding: 0px;
+  }
+
+  .zd-sidebar-menu {
+    left: 6px;
+  }
+}
+
+//end screen
+@media screen and (max-width: 1200px) {
+  .de-partners-options-btn a {
+    text-decoration: none;
+    margin: 0 0px;
+  }
+
+  .de-btn-primary {
+    padding: 0px 10px !important;
+    font-size: 14px !important;
+  }
+
+  .de-header-right .de-profile-pic-header.de-right-menu-ico,
+  .de-header-right i.de-right-menu-ico {
+    display: inline-block;
+  }
+
+  .de-search {
+    display: none;
+  }
+  .de-profile-tab-tx ul li .de-tab-tx-left, .de-summery-tx ul li .de-tab-tx-left {
+    width: 38%;
+  }
+}
+
+//end screen
+@media screen and (max-width: 1024px) {
+  .de-country-dro.de-login-logo {
+    display: inline-block !important;
+  }
+
+  .de-mob-btn {
+    top: 5px !important;
+    right: 5px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .de-settings-drawer {
+    transform: translateX(-320px);
+    @include transition(all 0.3s ease)
+  }
+
+  .active-sidebar-menu {
+    transform: translateX(0px);
+    @include transition(all 0.3s ease);
+  }
+
+  .de-setting-menu {
+    margin-top: 44px;
+  }
+
+  .de-tab-menu {
+    display: inline-block;
+  }
+
+  .de-country-drop {
+    display: none !important;
+  }
+
+  .de-right-sidebar {
+    display: inline-block;
+    z-index: 50000000;
+  }
+
+  .de-btn-right-sidebar {
+    display: inline-block;
+  }
+
+  .de-add-account-btn {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+  }
+
+  .tabs {
+    top: 0px;
+    position: absolute;
+    box-shadow: 30px 2px 30px rgba(26, 50, 86, 0.21);
+  }
+
+  .de-tab-sidebar-header {
+    border-right: transparent;
+  }
+
+  .zd-custom-tbl {
+    .layout {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .de-m-layout {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .zd-breadcrumbs {
+    margin-left: 30px;
+  }
+}
+
+//end screen
+@media screen and (max-width: 960px) {
+  .de-add-account-btn {
+    top: -14px;
+    right: -5px;
+  }
+}
+
+//end screen
+@media screen and (max-width: 850px) {
+  .de-btn-primary {
+    padding: 0px 10px !important;
+    font-size: 12px !important;
+  }
+
+  .zd-sidebar-menu {
+    top: 72px;
+  }
+}
+
+//end screen
+@media screen and (max-width: 768px) {
+  .de-add-account-btn {
+    top: -14px;
+    right: 0px;
+  }
+
+  .container {
+    padding: 0px !important;
+  }
+
+  .zd-custom-tbl a button {
+    margin-left: 3px;
+  }
+
+  .zd-breadcrumbs {
+    margin-left: 38px;
+  }
+}
+
+//end screen
+@media screen and (max-width: 650px) {
+  .de-login-btn {
+    margin-left: 3%;
+  }
+
+  .de-login-title {
+    margin-bottom: 24px;
+    margin-left: 10px;
+  }
+
+  .de-loging-header .de-login-logo {
+    height: 50px;
+    margin-left: 34px;
+  }
+
+  .v-application--is-ltr .v-tabs-bar.v-tabs-bar--is-mobile:not(.v-tabs-bar--show-arrows)>.v-slide-group__wrapper>.v-tabs-bar__content>.v-tabs-slider-wrapper+.v-tab {
+    margin-left: 0px;
+  }
+
+  .de-header-right {
+    .de-profile-pic-header {
+      display: none;
+    }
+  }
+
+  .de-full-screen-ico {
+    display: none;
+  }
+
+  .de-logo {
+    width: 117px;
+  }
+
+  .de-partners-options-btn a {
+    margin: 5px;
+    display: inline-block;
+
+    .de-btn-primary {
+      padding: 6px 12px !important;
+      font-size: 13px !important;
+      height: 31px !important;
+    }
+  }
+}
+
+//end screen
+@media screen and (max-width: 560px) {
+  .de-order-box {
+    display: flex;
+    align-items: center;
+    padding: 24px 10px;
+    height: 100px;
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 26px;
+    }
+    .de-order-icon {
+      width: 27px;
+      height: 33px;
+      margin-right: 10px;
+      }
+    .de-order-tx {
+      h3 {
+        font-weight: 400;
+      }
+      h4 {
+        font-size: 14px;
+      }
+    }
+
+  }
+  .zd-tbl-title {
+    margin-left: 4px;
+  }
+
+  .zd-breadcrumbs {
+    margin-left: 0px;
+  }
+
+  .de-box {
+    padding: 14px;
+  }
+
+  .zd-custom-tbl {
+    padding: 14px;
+  }
+
+  .de-pagenation-btn {
+    bottom: 14px;
+    left: 7px !important;
+  }
+
+  .de-sm-table {
+    padding-bottom: 44px;
+  }
+}
+
+//end screen
+@media screen and (max-width: 480px) {
+  .zd-custom-tbl {
+    padding: 2px;
+  }
+
+  .de-sm-table {
+    padding-bottom: 44px !important;
+  }
+}
+
+//end screen
+@media screen and (max-width: 375px) {
+  .de-btn-primary {
+    padding: 0px 8px !important;
+    font-size: 11px !important;
+  }
+}
+
+//end screen
+@media screen and (max-width: 320px) {}
+
+//end screen
+

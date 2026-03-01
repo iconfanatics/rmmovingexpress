@@ -1,0 +1,93 @@
+@use "../abstracts/variable" as *;
+@use "../abstracts/mixin" as *;
+.footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #222222;
+}
+.footerAbout {
+  p {
+    margin-top: 16px;
+    color: white;
+    font-size: $font-size-p;
+  }
+}
+.footerMenu {
+  color: white;
+  h3 {
+    font-size: $font-size-h3;
+    font-weight: 400;
+  }
+  ul {
+    margin-top: 20px;
+    li {
+      list-style: none;
+      font-weight: 300;
+      line-height: 2;
+      font-weight: 300;
+      font-size: $font-size-p;
+
+      a {
+        font-size: $font-size-p;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+.footerListMenu {
+  margin-top: 24px;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: 16px;
+      list-style: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      a {
+        font-size: 14px;
+        color: white;
+        font-weight: 300;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+.goToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  color: $primary;
+  box-shadow: 0 0px 20px rgb(91 95 102 / 20%);
+  border: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  svg {
+    width: 20px;
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: white;
+    transition: all 0.3s ease;
+    svg {
+      fill: white;
+    }
+  }
+}

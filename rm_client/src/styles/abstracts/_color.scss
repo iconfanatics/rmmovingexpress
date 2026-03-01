@@ -1,0 +1,40 @@
+$body-dark-color: #0e1925;
+$body-light-color: #f8f8f8;
+$blue-400: #4dabf7;
+$blue-500: #2363b3;
+$blue-600: #08355a;
+
+$orange-400: #f79a4d;
+$orange-500: #d87523;
+$orange-600: #683308;
+
+$dark-600: #111111;
+$light-600: #e6e6e6;
+$light-bg: #f2f5ff;
+
+$primary: $blue-500;
+$secondary: $orange-500;
+$ppp: #012345;
+
+:root.dark {
+  // override colors and classes for dark mode
+  $ppp: #012345;
+  $sss: #111111;
+  $success: #222222;
+}
+
+body,
+body[data-theme="light"] {
+  --body-bg: #f2f5ff;
+  --primary-bg: #ffffff;
+  --primary-border: #e5e5e5;
+  --header-bg: #303030;
+}
+
+body[data-theme="dark"] {
+  --body-bg: #0e1925;
+  --primary-bg: #162739;
+  --primary-border: #273e56;
+  --header-bg: #5836d8;
+  --header-border: #5836d8;
+}

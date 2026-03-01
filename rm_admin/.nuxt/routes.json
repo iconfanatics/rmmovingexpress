@@ -1,0 +1,422 @@
+[
+  {
+    "name": "blog___en",
+    "path": "/blog",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/blog/index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_6415020d"
+  },
+  {
+    "name": "login___en",
+    "path": "/login",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_21b3d5b1"
+  },
+  {
+    "name": "project___en",
+    "path": "/project",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/project/index.vue",
+    "chunkName": "pages/project/index",
+    "_name": "_5a90c724"
+  },
+  {
+    "name": "settings___en",
+    "path": "/settings",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/settings/index.vue",
+    "chunkName": "pages/settings/index",
+    "_name": "_f3658d64"
+  },
+  {
+    "name": "testimonials___en",
+    "path": "/testimonials",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/testimonials/index.vue",
+    "chunkName": "pages/testimonials/index",
+    "_name": "_ad23f8c2"
+  },
+  {
+    "name": "index___zh",
+    "path": "/zh",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_580c329a"
+  },
+  {
+    "name": "about-about-us___en",
+    "path": "/about/about-us",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/about/about-us/index.vue",
+    "chunkName": "pages/about/about-us/index",
+    "_name": "_84817bea"
+  },
+  {
+    "name": "about-team___en",
+    "path": "/about/team",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/about/team/index.vue",
+    "chunkName": "pages/about/team/index",
+    "_name": "_6effbdca"
+  },
+  {
+    "name": "admins-all___en",
+    "path": "/admins/all",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/admins/all.vue",
+    "chunkName": "pages/admins/all",
+    "_name": "_251f3d04"
+  },
+  {
+    "name": "client-all___en",
+    "path": "/client/all",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/client/all.vue",
+    "chunkName": "pages/client/all",
+    "_name": "_472f3745"
+  },
+  {
+    "name": "home-happy-customer___en",
+    "path": "/home/happy-customer",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/home/happy-customer/index.vue",
+    "chunkName": "pages/home/happy-customer/index",
+    "_name": "_617284e6"
+  },
+  {
+    "name": "home-home-service___en",
+    "path": "/home/home-service",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/home/home-service/index.vue",
+    "chunkName": "pages/home/home-service/index",
+    "_name": "_352bf182"
+  },
+  {
+    "name": "home-moving-expert___en",
+    "path": "/home/moving-expert",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/home/moving-expert/index.vue",
+    "chunkName": "pages/home/moving-expert/index",
+    "_name": "_c4135df8"
+  },
+  {
+    "name": "home-slider___en",
+    "path": "/home/slider",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/home/slider/index.vue",
+    "chunkName": "pages/home/slider/index",
+    "_name": "_da73ebc8"
+  },
+  {
+    "name": "resources-content___en",
+    "path": "/resources/content",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/resources/content/index.vue",
+    "chunkName": "pages/resources/content/index",
+    "_name": "_841241cc"
+  },
+  {
+    "name": "resources-document___en",
+    "path": "/resources/document",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/resources/document/index.vue",
+    "chunkName": "pages/resources/document/index",
+    "_name": "_e5663720"
+  },
+  {
+    "name": "service-service-banner___en",
+    "path": "/service/service-banner",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-banner/index.vue",
+    "chunkName": "pages/service/service-banner/index",
+    "_name": "_14d2db49"
+  },
+  {
+    "name": "service-service-category___en",
+    "path": "/service/service-category",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-category/index.vue",
+    "chunkName": "pages/service/service-category/index",
+    "_name": "_04d3821b"
+  },
+  {
+    "name": "service-service-faq___en",
+    "path": "/service/service-faq",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-faq/index.vue",
+    "chunkName": "pages/service/service-faq/index",
+    "_name": "_7efee1ef"
+  },
+  {
+    "name": "service-service-name___en",
+    "path": "/service/service-name",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-name/index.vue",
+    "chunkName": "pages/service/service-name/index",
+    "_name": "_38b48468"
+  },
+  {
+    "name": "service-service-page___en",
+    "path": "/service/service-page",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-page/index.vue",
+    "chunkName": "pages/service/service-page/index",
+    "_name": "_63739128"
+  },
+  {
+    "name": "service-service-section-two___en",
+    "path": "/service/service-section-two",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-section-two/index.vue",
+    "chunkName": "pages/service/service-section-two/index",
+    "_name": "_16716abd"
+  },
+  {
+    "name": "why-choose-why-choose-point___en",
+    "path": "/why-choose/why-choose-point",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/why-choose/why-choose-point/index.vue",
+    "chunkName": "pages/why-choose/why-choose-point/index",
+    "_name": "_6a2616fd"
+  },
+  {
+    "name": "why-choose-why-choose-us___en",
+    "path": "/why-choose/why-choose-us",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/why-choose/why-choose-us/index.vue",
+    "chunkName": "pages/why-choose/why-choose-us/index",
+    "_name": "_722e2b27"
+  },
+  {
+    "name": "blog___zh",
+    "path": "/zh/blog",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/blog/index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_6415020d"
+  },
+  {
+    "name": "login___zh",
+    "path": "/zh/login",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_21b3d5b1"
+  },
+  {
+    "name": "project___zh",
+    "path": "/zh/project",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/project/index.vue",
+    "chunkName": "pages/project/index",
+    "_name": "_5a90c724"
+  },
+  {
+    "name": "settings___zh",
+    "path": "/zh/settings",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/settings/index.vue",
+    "chunkName": "pages/settings/index",
+    "_name": "_f3658d64"
+  },
+  {
+    "name": "testimonials___zh",
+    "path": "/zh/testimonials",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/testimonials/index.vue",
+    "chunkName": "pages/testimonials/index",
+    "_name": "_ad23f8c2"
+  },
+  {
+    "name": "admins-roles-all___en",
+    "path": "/admins/roles/all",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/admins/roles/all.vue",
+    "chunkName": "pages/admins/roles/all",
+    "_name": "_e1c00f28"
+  },
+  {
+    "name": "about-about-us___zh",
+    "path": "/zh/about/about-us",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/about/about-us/index.vue",
+    "chunkName": "pages/about/about-us/index",
+    "_name": "_84817bea"
+  },
+  {
+    "name": "about-team___zh",
+    "path": "/zh/about/team",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/about/team/index.vue",
+    "chunkName": "pages/about/team/index",
+    "_name": "_6effbdca"
+  },
+  {
+    "name": "admins-all___zh",
+    "path": "/zh/admins/all",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/admins/all.vue",
+    "chunkName": "pages/admins/all",
+    "_name": "_251f3d04"
+  },
+  {
+    "name": "client-all___zh",
+    "path": "/zh/client/all",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/client/all.vue",
+    "chunkName": "pages/client/all",
+    "_name": "_472f3745"
+  },
+  {
+    "name": "home-happy-customer___zh",
+    "path": "/zh/home/happy-customer",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/home/happy-customer/index.vue",
+    "chunkName": "pages/home/happy-customer/index",
+    "_name": "_617284e6"
+  },
+  {
+    "name": "home-home-service___zh",
+    "path": "/zh/home/home-service",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/home/home-service/index.vue",
+    "chunkName": "pages/home/home-service/index",
+    "_name": "_352bf182"
+  },
+  {
+    "name": "home-moving-expert___zh",
+    "path": "/zh/home/moving-expert",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/home/moving-expert/index.vue",
+    "chunkName": "pages/home/moving-expert/index",
+    "_name": "_c4135df8"
+  },
+  {
+    "name": "home-slider___zh",
+    "path": "/zh/home/slider",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/home/slider/index.vue",
+    "chunkName": "pages/home/slider/index",
+    "_name": "_da73ebc8"
+  },
+  {
+    "name": "resources-content___zh",
+    "path": "/zh/resources/content",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/resources/content/index.vue",
+    "chunkName": "pages/resources/content/index",
+    "_name": "_841241cc"
+  },
+  {
+    "name": "resources-document___zh",
+    "path": "/zh/resources/document",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/resources/document/index.vue",
+    "chunkName": "pages/resources/document/index",
+    "_name": "_e5663720"
+  },
+  {
+    "name": "service-service-banner___zh",
+    "path": "/zh/service/service-banner",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-banner/index.vue",
+    "chunkName": "pages/service/service-banner/index",
+    "_name": "_14d2db49"
+  },
+  {
+    "name": "service-service-category___zh",
+    "path": "/zh/service/service-category",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-category/index.vue",
+    "chunkName": "pages/service/service-category/index",
+    "_name": "_04d3821b"
+  },
+  {
+    "name": "service-service-faq___zh",
+    "path": "/zh/service/service-faq",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-faq/index.vue",
+    "chunkName": "pages/service/service-faq/index",
+    "_name": "_7efee1ef"
+  },
+  {
+    "name": "service-service-name___zh",
+    "path": "/zh/service/service-name",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-name/index.vue",
+    "chunkName": "pages/service/service-name/index",
+    "_name": "_38b48468"
+  },
+  {
+    "name": "service-service-page___zh",
+    "path": "/zh/service/service-page",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-page/index.vue",
+    "chunkName": "pages/service/service-page/index",
+    "_name": "_63739128"
+  },
+  {
+    "name": "service-service-section-two___zh",
+    "path": "/zh/service/service-section-two",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/service/service-section-two/index.vue",
+    "chunkName": "pages/service/service-section-two/index",
+    "_name": "_16716abd"
+  },
+  {
+    "name": "why-choose-why-choose-point___zh",
+    "path": "/zh/why-choose/why-choose-point",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/why-choose/why-choose-point/index.vue",
+    "chunkName": "pages/why-choose/why-choose-point/index",
+    "_name": "_6a2616fd"
+  },
+  {
+    "name": "why-choose-why-choose-us___zh",
+    "path": "/zh/why-choose/why-choose-us",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/why-choose/why-choose-us/index.vue",
+    "chunkName": "pages/why-choose/why-choose-us/index",
+    "_name": "_722e2b27"
+  },
+  {
+    "name": "client-search-New folder-[...slug]___en",
+    "path": "/client/search/New%20folder/%5B...slug%5D",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/client/search/New folder/[...slug].vue",
+    "chunkName": "pages/client/search/New folder/[...slug]",
+    "_name": "_fef682ae"
+  },
+  {
+    "name": "client-search-New folder-[id]___en",
+    "path": "/client/search/New%20folder/%5Bid%5D",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/client/search/New folder/[id].vue",
+    "chunkName": "pages/client/search/New folder/[id]",
+    "_name": "_26195f6d"
+  },
+  {
+    "name": "client-search-New folder-000index___en",
+    "path": "/client/search/New%20folder/000index",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/client/search/New folder/000index.vue",
+    "chunkName": "pages/client/search/New folder/000index",
+    "_name": "_8a6d09b0"
+  },
+  {
+    "name": "admins-roles-all___zh",
+    "path": "/zh/admins/roles/all",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/admins/roles/all.vue",
+    "chunkName": "pages/admins/roles/all",
+    "_name": "_e1c00f28"
+  },
+  {
+    "name": "client-search-New folder-[...slug]___zh",
+    "path": "/zh/client/search/New%20folder/%5B...slug%5D",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/client/search/New folder/[...slug].vue",
+    "chunkName": "pages/client/search/New folder/[...slug]",
+    "_name": "_fef682ae"
+  },
+  {
+    "name": "client-search-New folder-[id]___zh",
+    "path": "/zh/client/search/New%20folder/%5Bid%5D",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/client/search/New folder/[id].vue",
+    "chunkName": "pages/client/search/New folder/[id]",
+    "_name": "_26195f6d"
+  },
+  {
+    "name": "client-search-New folder-000index___zh",
+    "path": "/zh/client/search/New%20folder/000index",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/client/search/New folder/000index.vue",
+    "chunkName": "pages/client/search/New folder/000index",
+    "_name": "_8a6d09b0"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_580c329a"
+  },
+  {
+    "name": "admins-details-adminId___zh",
+    "path": "/zh/admins/details/:adminId?",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/admins/details/_adminId.vue",
+    "chunkName": "pages/admins/details/_adminId",
+    "_name": "_1dabe5ab"
+  },
+  {
+    "name": "client-search-id___zh",
+    "path": "/zh/client/search/:id?",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/client/search/_id.vue",
+    "chunkName": "pages/client/search/_id",
+    "_name": "_5ba2ce42"
+  },
+  {
+    "name": "admins-details-adminId___en",
+    "path": "/admins/details/:adminId?",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/admins/details/_adminId.vue",
+    "chunkName": "pages/admins/details/_adminId",
+    "_name": "_1dabe5ab"
+  },
+  {
+    "name": "client-search-id___en",
+    "path": "/client/search/:id?",
+    "component": "/home/sany/Desktop/movingexpress/rm_admin/pages/client/search/_id.vue",
+    "chunkName": "pages/client/search/_id",
+    "_name": "_5ba2ce42"
+  }
+]

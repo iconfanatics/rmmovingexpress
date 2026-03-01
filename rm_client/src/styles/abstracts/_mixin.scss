@@ -1,0 +1,22 @@
+$media: (
+  xs: 640px,
+  sm: 768px,
+  md: 920px,
+  lg: 1024px,
+  xl: 1200px,
+  twoxl: 1440px,
+  threexl: 1536px,
+  fourxl: 1680px,
+  fivexl: 1736px,
+  sixxl: 1920px,
+);
+
+@mixin size($breakpoint) {
+  @each $breakpoints, $size in $media {
+    @if $breakpoint==$breakpoints {
+      @media screen and (max-width: $size) {
+        @content;
+      }
+    }
+  }
+}

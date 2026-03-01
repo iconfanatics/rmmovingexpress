@@ -1,0 +1,159 @@
+
+//-------------------- Common Vendor --------------------//
+
+@mixin vendor($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
+}
+
+
+//-------------------- Box Shadow --------------------//
+
+@mixin box-shadow($val...) {
+  box-shadow: ($val);
+  -moz-box-shadow: ($val);
+  -webkit-box-shadow: ($val);
+}
+
+
+//-------------------- Text Shadow --------------------//
+
+@mixin text-shadow($val...) {
+  text-shadow: ($val);
+  -moz-text-shadow: ($val);
+  -webkit-text-shadow: ($val);
+}
+
+
+//-------------------- Border Radius --------------------//
+
+@mixin border-radius($val) {
+  -webkit-border-radius: ($val);
+  -moz-border-radius: ($val);
+  border-radius: ($val);
+}
+
+
+//-------------------- Ellipsis --------------------//
+
+@mixin ellipsis ($max-width){
+  display: inline-block;
+  max-width: $max-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+//-------------------- Calc --------------------//
+
+@mixin calc ($property, $expression){
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression});
+}
+
+//-------------------- Transition --------------------//
+
+@mixin transition($val...) {
+  -webkit-transition: ($val);
+  -o-transition: ($val);
+  transition: ($val);
+}
+
+//-------------------- TranslateX --------------------//
+
+@mixin translateX($val...) {
+  -webkit-transform: translateX($val);
+  -ms-transform: translateX($val);
+  -o-transform: translateX($val);
+  transform: translateX($val);
+}
+
+
+//-------------------- TranslateY --------------------//
+
+@mixin translateY($val...) {
+  -webkit-transform: translateY($val);
+  -ms-transform: translateY($val);
+  -o-transform: translateY($val);
+  transform: translateY($val);
+}
+
+
+//-------------------- translate3d --------------------//
+
+@mixin translate3d($val,$val2,$val3) {
+  -webkit-transform: translate3d($val, $val2, $val3);
+  -ms-transform: translate3d($val, $val2, $val3);
+  -o-transform: translate3d($val, $val2, $val3);
+  transform: translate3d($val, $val2, $val3);
+}
+
+
+//-------------------- Rotate --------------------//
+
+@mixin rotate($val){
+  -webkit-transform: rotate($val);
+  -moz-transform: rotate($val);
+  -ms-transform: rotate($val);
+  -o-transform: rotate($val);
+  transform: rotate($val);
+}
+
+
+//-------------------- Scale --------------------//
+
+@mixin scale($val){
+  -webkit-transform: scale($val);
+  -moz-transform: scale($val);
+  -ms-transform: scale($val);
+  transform: scale($val);
+}
+
+
+//-------------------- Keyframes --------------------//
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+
+//-------------------- Clearfix --------------------//
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+//-------------------- Gradient --------------------//
+
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}
+
+
+

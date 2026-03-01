@@ -1,0 +1,55 @@
+.de-header-right {
+  margin-top: 13px;
+
+  .de-profile-pic-header {
+    margin-left: 20px;
+    vertical-align: middle;
+    @extend .cp;
+    &.de-right-menu-ico {
+      display: none;
+    }
+  }
+  .de-profile-pic-header {
+    width: 32px;
+    height: 32px;
+    @extend .dib;
+    img {
+      overflow: hidden;
+      @include border-radius(32px);
+      @extend .w100p;
+      @extend .h100p;
+    }
+  }
+}
+.de-logo {
+  @extend .dib;
+  width: 256px;
+  margin-top: 20px;
+}
+.de-search {
+  @extend .dib;
+  margin-top: 16px;
+}
+.de-country-drop {
+  display: inline-block !important;
+  margin-top: 23px !important;
+  width: 150px !important;
+  .v-select__selection--comma {
+    font-size: 14px !important;
+  }
+  .theme--light.v-label {
+    font-size: 14px !important;
+  }
+}
+
+.de-menu-right-sidebar {
+  width: 256px !important;
+  .de-country-drop {
+    margin-top: 0px !important;
+    width: 100% !important;
+  }
+  .de-box {
+    padding: 8px;
+  }
+
+}

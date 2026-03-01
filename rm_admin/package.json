@@ -1,0 +1,46 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "Customer Relationship Management (CRM) developed and maintained by ForexSolver, Inc.",
+  "author": "ForexSolver, Inc.",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --port 3001",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^40.2.0",
+    "@ckeditor/ckeditor5-vue": "^5.1.0",
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/pwa": "^3.3.4",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "@sweetalert2/themes": "^4.0.1",
+    "cookie-parser": "^1.4.5",
+    "cookieparser": "^0.1.0",
+    "express": "^4.17.1",
+    "highcharts": "^8.1.0",
+    "highcharts-vue": "^1.3.5",
+    "izitoast": "^1.4.0",
+    "js-cookie": "^2.2.1",
+    "nuxt": "^2.12.2",
+    "nuxt-i18n": "^6.11.1",
+    "string-similarity": "^4.0.4",
+    "sweetalert2": "^9.10.13",
+    "tiptap-vuetify": "^2.24.0",
+    "vee-validate": "^3.3.0",
+    "vue-datepicker": "^1.3.0",
+    "vuetify-datetime-picker": "^2.1.1"
+  },
+  "devDependencies": {
+    "@adonisjs/websocket-client": "^1.0.9",
+    "babel-polyfill": "^6.26.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}

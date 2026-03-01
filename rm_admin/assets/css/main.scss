@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------------------------------
+
+    //Author: Md. Mizanur rahman mizan
+    //Description: Social Trading project
+    //
+    //
+    //
+    //SASS Stylesheet
+
+-----------------------------------------------------------------------------------*/
+
+
+// Initialize
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+@import "helpers/_helpers.scss";
+
+
+//// Components
+@import "components/_table.scss";
+@import "components/_icon.scss";
+@import "components/_sidebar.scss";
+@import "components/_header.scss";
+@import "components/_footer.scss";
+@import "components/_pagination.scss";
+
+////Pages
+@import "page/_profile.scss";
+@import "page/_login.scss";
+@import "page/_home.scss";
+@import "page/_trading.scss";
+@import "page/_live-support.scss";
+@import "page/_error.scss";
+
+////Responsive
+@import "layout/_responsive.scss";
+
+
+

@@ -1,0 +1,243 @@
+.zd-custom-tbl {
+  box-shadow: 0px 3px 3px 0px rgba(38, 37, 46, 0.11) !important;
+  background: #ffffff;
+  padding: 36px;
+  .v-application .elevation-1 {
+    box-shadow: none !important;
+  }
+  .theme--light.v-data-table {
+    box-shadow: none !important;
+  }
+  .theme--light.v-data-table .v-data-footer {
+    border-top: none !important;
+  }
+  .v-data-table table {
+    margin: auto;
+    border: 1px solid #e0e0e0;
+  }
+  .theme--light.v-data-table thead tr:last-child th {
+    border-bottom: none;
+    background: $blue-extra-light-color;
+    height: 70px;
+  }
+  .theme--dark.v-data-table thead tr th {
+    color: $black-extra-color !important;
+  }
+  .theme--light.v-data-table
+    > .v-data-table__wrapper
+    > table
+    > thead
+    > tr
+    > th {
+    color: $tbl-header-tx-color;
+  }
+  .theme--dark.v-data-table {
+    background-color: #ffffff;
+    color: #232323;
+    &.elevation-1 {
+      box-shadow: none !important;
+    }
+  }
+  a {
+    button {
+      margin-left: 20px;
+    }
+  }
+}
+.de-tree-view {
+  .de-relation-btn {
+    .v-icon {
+      color: $gray-extra-light-color !important;
+    }
+  }
+}
+.v-icon.v-icon {
+  font-size: 16px !important;
+  color: $blue-light-color !important;
+}
+.tickets-tbl {
+  tbody {
+    tr {
+      td {
+        .v-icon {
+          color: $gray-extra-light-color !important;
+        }
+      }
+    }
+  }
+}
+.cardCountValue {
+  font-weight: bold;
+  color: blue;
+}
+.countBox {
+  background-color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
+  .countBoxIcon {
+    width: 66px;
+    height: 66px;
+    background-color: #ebeffd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #3661eb;
+  }
+  .countBoxText {
+    margin-left: 16px;
+    h1 {
+      font-size: 26px;
+      color: #3661eb;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    h4 {
+      font-size: 16px;
+      color: #646464;
+      font-weight: 500;
+    }
+  }
+
+  &:hover {
+    background-color: #3661eb;
+    transition: all 0.3s ease;
+    .countBoxIcon {
+      background-color: #fff;
+    }
+    .countBoxText {
+      h1,
+      h4 {
+        color: white;
+      }
+    }
+  }
+}
+.tiptap-vuetify-editor__content {
+  min-height: 200px;
+  border: 1px solid #bfbfbf;
+  margin-bottom: 30px;
+  .ProseMirror {
+    min-height: 200px;
+  }
+}
+.balanceAmount {
+  b {
+    margin: 3px;
+  }
+}
+.de-tbl-multi-header {
+  height: 54px;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 3.6;
+  padding-left: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: $theme-color;
+  @extend .w100p;
+}
+
+.de-download-btn {
+  background: #ffffff !important;
+  color: $theme-color !important;
+  letter-spacing: 0px !important;
+  text-transform: none !important;
+  margin: 0 6px;
+  &.v-btn--depressed {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.13) !important;
+  }
+}
+
+.de-apply-partner-btn {
+  background: #fff !important;
+  border: 1px solid #aecdfc;
+  padding: 9px 30px !important;
+  color: $theme-color !important;
+}
+.v-data-table tbody tr.v-data-table__expanded__content {
+  background: $theme-color;
+  box-shadow: inset 0px 2px 4px -5px rgba(50, 50, 50, 0.34),
+    inset 0px -4px 8px -5px rgba(50, 50, 50, 0.34) !important;
+  table {
+    border: none;
+  }
+  tr {
+    background: #ebecef;
+  }
+}
+.de-client-expanded-tbl {
+  .mdi-chevron-down {
+    font-size: 24px !important;
+    color: $theme-color !important;
+  }
+  .v-card {
+    border-radius: 0 !important;
+    background: $gray-extra-light-color !important;
+  }
+  tr.v-data-table__expanded__content {
+    background: transparent !important;
+  }
+}
+.de-contests {
+  h3 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 30px;
+    span {
+      width: 268px;
+      display: inline-block;
+    }
+  }
+}
+.country-search {
+  display: flex;
+  width: 400px;
+
+  .search-btn {
+    margin-left: 10px;
+  }
+}
+.client-search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.active-sidebar-menu {
+  .router-link-active {
+    color: $theme-color !important;
+  }
+}
+
+.de-lang-sidebar {
+  padding: 16px 8px 0;
+}
+// Added By The SpiderXXX
+.custom-layout {
+  margin-bottom: -40px;
+}
+// Data Table Class
+.table-nowrap {
+  white-space: nowrap;
+}
+.search-helper-flex {
+  display: flex;
+}
+.search-helper-tooltip-icon {
+  margin-top: -30px;
+}
+.ad-description {
+  width: 540px;
+  white-space: pre-line;
+}
+.resource-description {
+  width: 400px;
+  white-space: pre-line;
+}
