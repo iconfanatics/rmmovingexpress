@@ -20,7 +20,14 @@ module.exports = {
   */
   // origin: ['http://127.0.0.1:3000', 'http://localhost:3000', 'http://127.0.0.1:3001', 'http://localhost:3001'],
   // origin: Env.get('APP_URL_FRONTEND', 'APP_URL_FRONTEND', 'APP_URL_ADMIN', 'APP_URL_ADMIN'),
-  origin: true,
+  origin: [
+    'https://rmmovingexpress.com',
+    'http://rmmovingexpress.com',
+    'https://admin.rmmovingexpress.com',
+    'http://admin.rmmovingexpress.com',
+    'http://localhost:3000',
+    'http://localhost:3001',
+  ],
 
   // origin: [
   //   'https://rmmovingexpress.com',
